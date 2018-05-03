@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IndexedDB + Service Worker s</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="jumbotron">
+            <h1 class="site-title">
+                <h1>Service Workers + IndexedDB!</h1>
+                <p>This form looks normal, until you look at the service worker!</p>
+            </h1>
+        </div>
+        <div class="row">
+            <section class="col-sm-6">
+                <h2>Entries</h2>
+                <ul id="todo-entries"></ul>
+            </section>
+            <section class="col-sm-3 col-sm-offset-3">
+                <h2>New Entry</h2>
+                <form id="todo-form">
+                    <div class="form-group">
+                        <label for="todo-entry">Email address</label>
+                        <input type="text" class="form-control" id="todo-input" placeholder="New Task">
+                    </div>
+                    <button type="submit" class="btn btn-default">Add</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
